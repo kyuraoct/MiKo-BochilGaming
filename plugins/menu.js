@@ -153,7 +153,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = 'https://telegra.ph/file/2ebe351a63861053f58df.jpg'
-    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://github.com/BochilGaming/games-wabot', 'Github', null, null, [
+    conn.sendHydrated(m.chat, text.trim(), 'Miko-Bot@kyura:1410', pp, 'https://github.com/BochilGaming/games-wabot', 'Github', null, null, [
       ['Donate', '/donasi'],
       ['Speed', '/ping'],
       ['Owner', '/owner']
